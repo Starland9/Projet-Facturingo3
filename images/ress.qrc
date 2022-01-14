@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="img">
+    <file>F1-icon.png</file>
+  </qresource>
+</RCC>
