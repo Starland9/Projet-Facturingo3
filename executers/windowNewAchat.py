@@ -1,9 +1,7 @@
-import os
 import random
 import shutil
 import sqlite3
 import sys
-import cmd
 from datetime import date
 
 import openpyxl
