@@ -15,12 +15,9 @@ class Ui_Dialog(object):
     def setupUi(self, Dialog):
         Dialog.setObjectName("Dialog")
         Dialog.resize(668, 474)
-        Dialog.setStyleSheet("background-color: rgb(52, 101, 164);")
         self.gridLayout = QtWidgets.QGridLayout(Dialog)
         self.gridLayout.setObjectName("gridLayout")
         self.tableWidget = QtWidgets.QTableWidget(Dialog)
-        self.tableWidget.setStyleSheet("background-color: rgb(238, 238, 236);\n"
-"alternate-background-color: rgba(33, 187, 226, 108);")
         self.tableWidget.setEditTriggers(QtWidgets.QAbstractItemView.SelectedClicked)
         self.tableWidget.setAlternatingRowColors(True)
         self.tableWidget.setRowCount(100)
@@ -39,7 +36,6 @@ class Ui_Dialog(object):
         font = QtGui.QFont()
         font.setPointSize(16)
         self.label.setFont(font)
-        self.label.setStyleSheet("color: rgb(238, 238, 236);")
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
         self.gridLayout.addWidget(self.label, 0, 0, 1, 2)
@@ -47,7 +43,9 @@ class Ui_Dialog(object):
         self.btn_ok.setMinimumSize(QtCore.QSize(0, 50))
         self.btn_ok.setObjectName("btn_ok")
         self.gridLayout.addWidget(self.btn_ok, 3, 0, 1, 1)
-        spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
+        spacerItem = QtWidgets.QSpacerItem(
+            20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed
+        )
         self.gridLayout.addItem(spacerItem, 1, 0, 1, 1)
 
         self.retranslateUi(Dialog)
@@ -62,5 +60,7 @@ class Ui_Dialog(object):
         item.setText(_translate("Dialog", "Désignation"))
         item = self.tableWidget.horizontalHeaderItem(2)
         item.setText(_translate("Dialog", "Quantités restantes"))
-        self.label.setText(_translate("Dialog", "Les articles suivant sont entrain de finir en stock"))
+        self.label.setText(
+            _translate("Dialog", "Les articles suivant sont entrain de finir en stock")
+        )
         self.btn_ok.setText(_translate("Dialog", "Compris"))

@@ -21,7 +21,6 @@ class Ui_Dialog(object):
         font.setPointSize(13)
         Dialog.setFont(font)
         Dialog.setAutoFillBackground(False)
-        Dialog.setStyleSheet("background-color: rgb(52, 101, 164);")
         self.label = QtWidgets.QLabel(Dialog)
         self.label.setGeometry(QtCore.QRect(310, -20, 227, 91))
         font = QtGui.QFont()
@@ -30,7 +29,6 @@ class Ui_Dialog(object):
         font.setBold(True)
         font.setWeight(75)
         self.label.setFont(font)
-        self.label.setStyleSheet("color: rgb(255, 255, 255);")
         self.label.setFrameShadow(QtWidgets.QFrame.Plain)
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
@@ -44,14 +42,20 @@ class Ui_Dialog(object):
         font = QtGui.QFont()
         font.setPointSize(10)
         self.label_3.setFont(font)
-        self.label_3.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
+        self.label_3.setAlignment(
+            QtCore.Qt.AlignRight | QtCore.Qt.AlignTrailing | QtCore.Qt.AlignVCenter
+        )
         self.label_3.setObjectName("label_3")
         self.btn_nouvel_achat = QtWidgets.QPushButton(Dialog)
         self.btn_nouvel_achat.setGeometry(QtCore.QRect(108, 152, 250, 100))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(100)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.btn_nouvel_achat.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.btn_nouvel_achat.sizePolicy().hasHeightForWidth()
+        )
         self.btn_nouvel_achat.setSizePolicy(sizePolicy)
         self.btn_nouvel_achat.setMinimumSize(QtCore.QSize(250, 100))
         self.btn_nouvel_achat.setMaximumSize(QtCore.QSize(250, 100))
@@ -63,18 +67,20 @@ class Ui_Dialog(object):
         self.btn_nouvel_achat.setFont(font)
         self.btn_nouvel_achat.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.btn_nouvel_achat.setAutoFillBackground(False)
-        self.btn_nouvel_achat.setStyleSheet("color: rgb(255, 255, 255);\n"
-"background-color: rgba(65, 191, 64, 197);")
         self.btn_nouvel_achat.setAutoRepeat(False)
         self.btn_nouvel_achat.setAutoExclusive(False)
         self.btn_nouvel_achat.setFlat(False)
         self.btn_nouvel_achat.setObjectName("btn_nouvel_achat")
         self.btn_infos_clt = QtWidgets.QPushButton(Dialog)
         self.btn_infos_clt.setGeometry(QtCore.QRect(500, 150, 250, 100))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(100)
         sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.btn_infos_clt.sizePolicy().hasHeightForWidth())
+        sizePolicy.setHeightForWidth(
+            self.btn_infos_clt.sizePolicy().hasHeightForWidth()
+        )
         self.btn_infos_clt.setSizePolicy(sizePolicy)
         self.btn_infos_clt.setMinimumSize(QtCore.QSize(250, 100))
         self.btn_infos_clt.setMaximumSize(QtCore.QSize(250, 100))
@@ -86,20 +92,19 @@ class Ui_Dialog(object):
         self.btn_infos_clt.setFont(font)
         self.btn_infos_clt.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.btn_infos_clt.setAutoFillBackground(False)
-        self.btn_infos_clt.setStyleSheet("color: rgb(255, 255, 255);\n"
-"background-color: rgba(204, 105, 47, 152);")
         self.btn_infos_clt.setAutoRepeat(False)
         self.btn_infos_clt.setAutoExclusive(False)
         self.btn_infos_clt.setFlat(False)
         self.btn_infos_clt.setObjectName("btn_infos_clt")
         self.label_2 = QtWidgets.QLabel(Dialog)
         self.label_2.setGeometry(QtCore.QRect(340, 90, 165, 17))
-        self.label_2.setStyleSheet("color: rgb(255, 255, 255);")
         self.label_2.setAlignment(QtCore.Qt.AlignCenter)
         self.label_2.setObjectName("label_2")
         self.btn_admin = QtWidgets.QPushButton(Dialog)
         self.btn_admin.setGeometry(QtCore.QRect(108, 360, 250, 100))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(100)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.btn_admin.sizePolicy().hasHeightForWidth())
@@ -114,15 +119,15 @@ class Ui_Dialog(object):
         self.btn_admin.setFont(font)
         self.btn_admin.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.btn_admin.setAutoFillBackground(False)
-        self.btn_admin.setStyleSheet("color: rgb(255, 255, 255);\n"
-"background-color: rgba(216, 38, 103, 146);")
         self.btn_admin.setAutoRepeat(False)
         self.btn_admin.setAutoExclusive(False)
         self.btn_admin.setFlat(False)
         self.btn_admin.setObjectName("btn_admin")
         self.btn_stock = QtWidgets.QPushButton(Dialog)
         self.btn_stock.setGeometry(QtCore.QRect(500, 360, 250, 100))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy = QtWidgets.QSizePolicy(
+            QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Minimum
+        )
         sizePolicy.setHorizontalStretch(100)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.btn_stock.sizePolicy().hasHeightForWidth())
@@ -137,8 +142,6 @@ class Ui_Dialog(object):
         self.btn_stock.setFont(font)
         self.btn_stock.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.btn_stock.setAutoFillBackground(False)
-        self.btn_stock.setStyleSheet("color: rgb(255, 255, 255);\n"
-"background-color: rgba(17, 158, 101, 143);")
         self.btn_stock.setAutoRepeat(False)
         self.btn_stock.setAutoExclusive(False)
         self.btn_stock.setFlat(False)
@@ -149,7 +152,6 @@ class Ui_Dialog(object):
         font.setUnderline(True)
         self.btn_apropos.setFont(font)
         self.btn_apropos.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
-        self.btn_apropos.setStyleSheet("color: rgb(252, 175, 62);")
         self.btn_apropos.setFlat(True)
         self.btn_apropos.setObjectName("btn_apropos")
 
@@ -159,22 +161,21 @@ class Ui_Dialog(object):
     def retranslateUi(self, Dialog):
         _translate = QtCore.QCoreApplication.translate
         Dialog.setWindowTitle(_translate("Dialog", "Accueil Facturingo"))
-        self.label.setText(_translate("Dialog", "\n"
-"Bienvenu sur Facturingo"))
-        self.label_3.setText(_translate("Dialog", "Facturingo V3.2.  Starland .inc Touts droits réservés"))
-        self.btn_nouvel_achat.setText(_translate("Dialog", "+\n"
-"Nouvel Achat\n"
-""))
-        self.btn_infos_clt.setText(_translate("Dialog", "\n"
-"Trouver les informations\n"
-"sur un client\n"
-""))
+        self.label.setText(_translate("Dialog", "\n" "Bienvenu sur Facturingo"))
+        self.label_3.setText(
+            _translate(
+                "Dialog", "Facturingo V3.2.  Starland .inc Touts droits réservés"
+            )
+        )
+        self.btn_nouvel_achat.setText(_translate("Dialog", "+\n" "Nouvel Achat\n" ""))
+        self.btn_infos_clt.setText(
+            _translate("Dialog", "\n" "Trouver les informations\n" "sur un client\n" "")
+        )
         self.label_2.setText(_translate("Dialog", "Que voulez-vous faire ?"))
-        self.btn_admin.setText(_translate("Dialog", "\n"
-"Créer ou modifier\n"
-"Le compte administrateur\n"
-""))
-        self.btn_stock.setText(_translate("Dialog", "\n"
-"Gestion du stock\n"
-""))
+        self.btn_admin.setText(
+            _translate(
+                "Dialog", "\n" "Créer ou modifier\n" "Le compte administrateur\n" ""
+            )
+        )
+        self.btn_stock.setText(_translate("Dialog", "\n" "Gestion du stock\n" ""))
         self.btn_apropos.setText(_translate("Dialog", "A propos de facturingo"))
