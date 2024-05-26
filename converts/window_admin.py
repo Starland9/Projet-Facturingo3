@@ -15,9 +15,6 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(922, 695)
-        font = QtGui.QFont()
-        font.setPointSize(11)
-        MainWindow.setFont(font)
         icon = QtGui.QIcon()
         icon.addPixmap(
             QtGui.QPixmap(":/img/F1-icon.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off
@@ -36,17 +33,11 @@ class Ui_MainWindow(object):
         )
         self.gridLayout_2.addItem(spacerItem1, 4, 0, 1, 1)
         self.label_3 = QtWidgets.QLabel(self.centralwidget)
-        font = QtGui.QFont()
-        font.setPointSize(15)
-        self.label_3.setFont(font)
         self.label_3.setObjectName("label_3")
         self.gridLayout_2.addWidget(self.label_3, 0, 0, 1, 1)
         self.btn_modif = QtWidgets.QPushButton(self.centralwidget)
         self.btn_modif.setMinimumSize(QtCore.QSize(300, 100))
         self.btn_modif.setMaximumSize(QtCore.QSize(99999, 16777215))
-        font = QtGui.QFont()
-        font.setPointSize(13)
-        self.btn_modif.setFont(font)
         self.btn_modif.setObjectName("btn_modif")
         self.gridLayout_2.addWidget(self.btn_modif, 3, 0, 1, 2)
         self.btn_stat = QtWidgets.QPushButton(self.centralwidget)
@@ -54,12 +45,6 @@ class Ui_MainWindow(object):
         self.btn_stat.setObjectName("btn_stat")
         self.gridLayout_2.addWidget(self.btn_stat, 3, 2, 1, 1)
         self.txt_log = QtWidgets.QPlainTextEdit(self.centralwidget)
-        font = QtGui.QFont()
-        font.setFamily("FreeMono")
-        font.setPointSize(11)
-        font.setBold(True)
-        font.setWeight(75)
-        self.txt_log.setFont(font)
         self.txt_log.setObjectName("txt_log")
         self.gridLayout_2.addWidget(self.txt_log, 1, 0, 1, 3)
         MainWindow.setCentralWidget(self.centralwidget)
@@ -112,9 +97,6 @@ class Ui_MainWindow(object):
         self.formLayout.setVerticalSpacing(15)
         self.formLayout.setObjectName("formLayout")
         self.nomLabel = QtWidgets.QLabel(self.groupBox)
-        font = QtGui.QFont()
-        font.setPointSize(13)
-        self.nomLabel.setFont(font)
         self.nomLabel.setObjectName("nomLabel")
         self.formLayout.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.nomLabel)
         self.nomLineEdit = QtWidgets.QLineEdit(self.groupBox)
@@ -123,9 +105,6 @@ class Ui_MainWindow(object):
         self.nomLineEdit.setObjectName("nomLineEdit")
         self.formLayout.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.nomLineEdit)
         self.prNomLabel = QtWidgets.QLabel(self.groupBox)
-        font = QtGui.QFont()
-        font.setPointSize(13)
-        self.prNomLabel.setFont(font)
         self.prNomLabel.setObjectName("prNomLabel")
         self.formLayout.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.prNomLabel)
         self.prNomLineEdit = QtWidgets.QLineEdit(self.groupBox)
@@ -136,9 +115,6 @@ class Ui_MainWindow(object):
             1, QtWidgets.QFormLayout.FieldRole, self.prNomLineEdit
         )
         self.dateDeNaissanceLabel = QtWidgets.QLabel(self.groupBox)
-        font = QtGui.QFont()
-        font.setPointSize(13)
-        self.dateDeNaissanceLabel.setFont(font)
         self.dateDeNaissanceLabel.setObjectName("dateDeNaissanceLabel")
         self.formLayout.setWidget(
             2, QtWidgets.QFormLayout.LabelRole, self.dateDeNaissanceLabel
@@ -151,9 +127,6 @@ class Ui_MainWindow(object):
             2, QtWidgets.QFormLayout.FieldRole, self.dateDeNaissanceLineEdit
         )
         self.loginLabel = QtWidgets.QLabel(self.groupBox)
-        font = QtGui.QFont()
-        font.setPointSize(13)
-        self.loginLabel.setFont(font)
         self.loginLabel.setObjectName("loginLabel")
         self.formLayout.setWidget(3, QtWidgets.QFormLayout.LabelRole, self.loginLabel)
         self.loginLineEdit = QtWidgets.QLineEdit(self.groupBox)
@@ -164,9 +137,6 @@ class Ui_MainWindow(object):
             3, QtWidgets.QFormLayout.FieldRole, self.loginLineEdit
         )
         self.motDePasseLabel = QtWidgets.QLabel(self.groupBox)
-        font = QtGui.QFont()
-        font.setPointSize(13)
-        self.motDePasseLabel.setFont(font)
         self.motDePasseLabel.setObjectName("motDePasseLabel")
         self.formLayout.setWidget(
             4, QtWidgets.QFormLayout.LabelRole, self.motDePasseLabel
@@ -179,9 +149,6 @@ class Ui_MainWindow(object):
             4, QtWidgets.QFormLayout.FieldRole, self.motDePasseLineEdit
         )
         self.nDeTLPhoneLabel = QtWidgets.QLabel(self.groupBox)
-        font = QtGui.QFont()
-        font.setPointSize(13)
-        self.nDeTLPhoneLabel.setFont(font)
         self.nDeTLPhoneLabel.setObjectName("nDeTLPhoneLabel")
         self.formLayout.setWidget(
             5, QtWidgets.QFormLayout.LabelRole, self.nDeTLPhoneLabel

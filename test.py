@@ -5,7 +5,7 @@ def removess(filename):
     text = ""
     with open(f"{filename}", "r") as file:
         for line in file.readlines():
-            if not (line.__contains__("setStyleSheet")):
+            if not (line.__contains__("font")):
                 text += line
 
     with open(f"{filename}", "w") as file:
